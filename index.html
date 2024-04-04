@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkToQR | Convert your URL into QR codes (Made specially by Namish Kumar)</title>
+</head>
+<style>
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: brown;
+        color: white;
+    }
+
+    input {
+        padding: 15px;
+        outline: none;
+        border: none;
+        font-size: 17px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 360px;
+        width: 15.85em;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 16px;
+        width: 13em;
+        border-radius: 360px;
+        border: none;
+        outline: none;
+        color: white;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgb(0, 0, 0);
+    }
+</style>
+<body>
+    <h1>LinkToQR</h1>
+    <p>Enter a link and generate a QR code for the same without any tension!</p>
+    <form method="post" action="/generateQR_CODE">
+        <input name="link" placeholder="Enter your link" required>
+        <br>
+        <br>
+        <button type="submit">Generate</button>
+    </form>
+    <br>
+    <p>This application is made by <b>Namish Kumar</b> in April 2024</p>
+</body>
+</html>
